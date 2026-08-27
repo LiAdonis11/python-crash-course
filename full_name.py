@@ -1,3 +1,5 @@
+# On this code, this is where i learn how to manipulate string 
+
 first_name = "ada"
 last_name = "lovelace"
 full_name = f"{first_name} {last_name}"

@@ -1,3 +1,4 @@
+# i also practice how to manipulate string here
 name = "Gors gorio"
 question = "are you having fun?"
 full_message = f'{name}, {question}'
