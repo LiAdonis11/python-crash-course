@@ -61,3 +61,4 @@ del guest_list[0]
 print("Dinner is closed")
 print(guest_list)
 
+print(f"The number of people invited for tonights dinner are {len(guest_list)}.")
