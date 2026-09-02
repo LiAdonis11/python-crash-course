@@ -46,3 +46,7 @@ print(cars)
 print(f"A {too_expensive.title()} is too expensive for me.")
 
 ("------------------------------------------------")
+cars.append('lambo')
+print(cars)
+print(cars[0].title())
+print(cars[-1])
