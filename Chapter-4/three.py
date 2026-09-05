@@ -1,0 +1,3 @@
+# threes = []
+for three in range(3,31,3):
+    print(three)
