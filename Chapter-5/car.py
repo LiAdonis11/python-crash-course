@@ -1,0 +1,16 @@
+car = 'subaru'
+print("Is car == 'subaro' ? I predict True.")
+print(car == 'subaru')
+print(car > 'subaru')
+print(car >= 'subaru')
+print(car < 'subaru')
+print(car <= 'subaru')
+print(car != 'subaru')
+
+print("\nIs  car == 'audi' ? I predict False.")
+print(car == 'audi')
+print(car > 'audi')
+print(car >= 'audi')
+print(car < 'audi')
+print(car <= 'audi')
+print(car != 'audi')
