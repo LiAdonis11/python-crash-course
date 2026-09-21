@@ -1,0 +1,1 @@
+### All activities are styled based on the PEP 8
