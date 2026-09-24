@@ -49,3 +49,11 @@ else:
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 
 print(f"New position: {alien_0['x_position']}")
+
+alien_0['points'] = 5
+
+print(alien_0)
+
+del alien_0['points']
+
+print(alien_0)
