@@ -11,3 +11,4 @@ print(f"Data Types: {glossary['data types'].title()}.")
 print(f"Conditional statements : {glossary['if else statements'].title()}.")
 print(f"Loops : {glossary['loop'].title()}.")
 print(f"Lists : {glossary['list'].title()}.")
+    
