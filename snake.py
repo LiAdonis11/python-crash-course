@@ -1,3 +1,3 @@
-prin("Hissssss..sss.")
+print("Hissssss..sss.")
 
       
