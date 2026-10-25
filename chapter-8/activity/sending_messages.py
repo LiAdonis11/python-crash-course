@@ -10,6 +10,6 @@ def send_messages(messages,sent_messages):
 messages = ['Hi, good evening!', "How's your day?", 'Happy lunch!', 'Goodluck!']
 sent_messages = []
 
-send_messages(messages,sent_messages)
+send_messages(messages[:],sent_messages)
 print(f"Messages: {messages}")
 print(f"Messages sent: {sent_messages}")
