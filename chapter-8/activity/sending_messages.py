@@ -1,8 +1,8 @@
 def send_messages(messages,sent_messages):
     while messages:
-            current_message = messages.pop()
-            print(f"Sending message: {current_message}")
-            sent_messages.append(current_message)  
+        current_message = messages.pop()
+        print(f"Sending message: {current_message}")
+        sent_messages.append(current_message)  
     print("\nThe following message has been sent:")
     for sent_message in sent_messages:
         print(sent_message)
