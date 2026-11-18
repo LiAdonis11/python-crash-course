@@ -11,6 +11,8 @@ class Restaurant:
     def open_restaurant(self):
         """Display the restaurant operating status."""
         print(f"The restaurant is open!")
+        
+   
 
 restaurant = Restaurant('Mr.Li', 'Asian')
 print(restaurant.restaurant_name)

@@ -13,6 +13,19 @@ class Restaurant:
         """Display restaurant operating status"""
         print(f"The restaurant is open.")
 
+class IceCreamStand(Restaurant):
+    """Represent a specific kind of restaurant."""
+    
+    def __init__(self,restaurant_name, cuisine_type, flavors):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+        
+    def display_flavors(self):
+        print("We have the following flavors")
+        for flavors in self.flavors:
+         print(f"- {flavors}.")
+ 
+
 make_restaurant = Restaurant('Mr.Lee', 'Asian')
 
 make_restaurant.describe_restaurant()
@@ -26,8 +39,14 @@ make_restaurant1 = Restaurant('Kayekaye', 'American')
 make_restaurant1.describe_restaurant()
 make_restaurant2 = Restaurant('Gors', 'Egyptian')
 make_restaurant2.describe_restaurant()
-make_restaurant3  =Restaurant('LI', 'Asian')
+make_restaurant3 = Restaurant('LI', 'Asian')
 make_restaurant3.describe_restaurant()
+
+make_restaurant4 = IceCreamStand('gorsing', 'african',['choco', 'vanilla', 'honey', 'milk'])
+make_restaurant4.display_flavors()
+
+make_restaurant4.describe_restaurant()
+make_restaurant4.open_restaurant()
 
     
     
