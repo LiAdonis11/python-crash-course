@@ -23,7 +23,7 @@ class IceCreamStand(Restaurant):
     def display_flavors(self):
         print("We have the following flavors")
         for flavors in self.flavors:
-         print(f"- {flavors}.")
+            print(f"- {flavors}.")
  
 
 make_restaurant = Restaurant('Mr.Lee', 'Asian')
