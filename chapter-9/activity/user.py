@@ -16,23 +16,29 @@ class User:
         """Greeting the user"""
         print(f"Hello, {self.first_name}! How's your day?")
         
-class Admin(User):
-    def __init__(self, first_name, last_name, age, location, privileges):
-        super().__init__(first_name, last_name, age, location)
+
+class Privileges:
+    def __init__(self, privileges):
         self.privileges = privileges
-    
+     
     def show_privileges(self):
         print("The admin can:")
         for privilege in self.privileges:
-            print(f"- {privilege}")
-               
+            print(f"- {privilege}")   
+    
         
+class Admin(User):
+    def __init__(self, first_name, last_name, age, location, privileges):
+        super().__init__(first_name, last_name, age, location)
+        
+        self.privileges = privileges
+      
         
 user1 = User("Lee Adonis", "Lucero", 23, "Tagudin")
 user1.describe_user()
 user1.greet_user()
 print("\n")
-user2 = User("Kaye", "Lucero", 25, "Tagudin")
+user2 = User("Kaye", "Lucero", 25, "Tagudin")   
 user2.describe_user()
 user2.greet_user()
 print("\n")
@@ -40,9 +46,9 @@ user3 = User("Gors", "Lucero", 2, "Tagudin")
 user3.describe_user()
 user3.greet_user()
 
-admin = Admin('lee', 'lucero', 23, 'tag', ['can add post', 'can delete post', 'can be user'])
+admin = Admin('lee', 'lucero', 23, 'tag', Privileges(['can add post', 'can delete post', 'can be user']))
 admin.describe_user()
 admin.greet_user()
-admin.show_privileges()
+admin.privileges.show_privileges()
         
         
